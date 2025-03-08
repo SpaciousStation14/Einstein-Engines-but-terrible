@@ -1,5 +1,5 @@
-using Content.Shared._Goobstation.MartialArts.Events; // Goobstation - Martial Arts
 using Content.Shared.Contests; // Goobstation - Grab Intent
+using Content.Shared._Goobstation.MartialArts.Events; // Goobstation - Martial Arts
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics; // Goobstation - Grab Intent
 using Content.Shared._White.Grab; // Goobstation
@@ -279,6 +279,7 @@ public sealed class PullingSystem : EntitySystem
     {
         component.NextPushTargetChange += args.PausedTime;
     }
+
 
     // Goobstation - Grab Intent Refactor
     private void OnVirtualItemDeleted(Entity<PullerComponent> ent, ref VirtualItemDeletedEvent args)
